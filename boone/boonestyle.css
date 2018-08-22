@@ -1,4 +1,13 @@
-/*mbstyle.css*/
+/*boonestyle.css*/
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
 
 body {
   background-color: black;
