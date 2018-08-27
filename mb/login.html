@@ -1,26 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Login page</title>
+  <link rel="icon" href="Images/mbicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="mbstyle.css" type="text/css">
+  <title>login</title>
 </head>
+
 <body>
-<form>
-<label for="pswd">Enter your password: </label>
-<input type="password" id="pswd">
-<input type="button" value="Submit" onclick="checkPswd();" />
+<div class="mbcontent">
+  <div class="mbtext" style="font-size:36px">
+    enter the number of paperclips here:
+  </div>
+</div>
+<div class="mbcontent">
+<form style="position:relative;margin-top:50px;margin-left:auto;margin-right:auto;margin-bottom:50px;">
+
+<label for="yellow" style="color:yellow;">
+  <div class="testBox">
+    yellow:
+  </div>
+</label>
+<br>
+<input type="" id="yellow">
+
+<br><br><br>
+
+<label for="green" style="color:green;">
+  <div class="testBox">
+    green:
+  </div>
+</label>
+<br>
+<input type="" id="green">
+
+<br><br><br>
+
+<label for="blue" style="color:blue;">
+  <div class="testBox">
+    blue:
+  </div>
+</label>
+<br>
+<input type="" id="blue">
+
+<br><br><br>
+
+<label for="purple" style="color:purple;">
+  <div class="testBox">
+    purple:
+  </div>
+</label>
+<br>
+<input type="" id="purple">
+
+<br><br><br>
+
+<label for="red" style="color:red;">
+  <div class="testBox">
+    red:
+  </div>
+</label>
+<br>
+<input type="" id="red">
+
+<br><br><br>
+
+<label for="pink" style="color:pink;">
+  <div class="testBox">
+    pink:
+  </div>
+</label>
+<br>
+<input type="" id="pink">
+
+<br><br><br>
+
+<label for="white" style="color:white;">
+  <div class="testBox">
+    white:
+  </div>
+</label>
+<br>
+<input type="" id="white">
+
+<br><br><br>
+
+<input type="button" value="Submit" onclick="checkPswd();" style="font-size:20px" />
+
 </form>
+</div>
 <!--Function to check password the already set password is admin-->
 <script type="text/javascript">
 function checkPswd() {
-    var confirmPassword = "admin";
-    var password = document.getElementById("pswd").value;
-    if (password == confirmPassword) {
-         window.location="quest.html";
+    var IDs = ["yellow","green","blue","purple","red","pink","white"]
+    var pwds = ["10","17","38","10","17","38","10"];
+    var correct = 0;
+    var i = 0;
+    while(i < pwds.length){
+      // var password = document.getElementById("pswd").value;
+      var password = document.getElementById(IDs[i]).value;
+      if (password == pwds[i]) {
+        correct = 1;
+      }
+      else{
+        correct = 0;
+        alert("numbers do not add up");
+        break;
+      }
+    i = i + 1;
     }
-    else{
-        alert("Passwords do not match.");
+    if(correct){
+      window.location="quest.html";
     }
-}
+  }
+
 </script>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+</container>
+</content>
 </body>
 </html>
