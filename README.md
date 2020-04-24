@@ -1,2 +1,4 @@
 # bakerscott.github.io
-Personal website: IN PROGRESS
+
+Thesis info: [here](https://bakerscott.github.io/thesisinfo.html)
+
