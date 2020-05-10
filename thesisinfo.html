@@ -11,13 +11,15 @@
 <style>
 
 body, html {
-  background-image: url("Images/DSC_7522.JPG");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+/*   background-image: url("Images/DSC_7522.JPG"); */
+    background: url("Images/IMG_1162.JPG") no-repeat, #CFB87C;
+/*   background-color: #CFB87C; */
+/*   background-attachment: fixed; */
+  background-position: top;
   background-size: 100%;
+   height = 100%;
   text-align: center;
-  box-shadow: inset 0 0 150px 50px rgba(0,0,0,0.9);
+  box-shadow: inset 0 0 150px 50px rgba(0,0,0,0.5);
   margin: 0;
 }
 
@@ -48,14 +50,14 @@ button{
   font-family: Courier;
   border: 5px solid lightgrey;
   border-radius: 5px;
-  opacity: 0.9;
+  opacity: 0.99;
 }
 .cssTitle{
   position: relative;
   width: 1000px;
   text-align: center;
   color: white;
-  font-size: 48px;
+  font-size: 32px;
 }
 .container {
   position: relative;
@@ -72,7 +74,7 @@ button{
 .image{
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: -63px;
+  margin-bottom: 0px;
   filter: blur(1.5px);
   opacity: 0.7;
   filter: alpha(opacity(70));
@@ -84,6 +86,7 @@ button{
   position: relative;
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 50px;
   color: black;
   width: 1000px;
   font-family: Courier;
@@ -98,30 +101,63 @@ a:visited {
   text-decoration: none;
   color: white
 }
+    
+iframe {
+    background: #CFB87C;
+    border: none;
+    position:relative;
+    height: 450vh;        /* Viewport-relative units */
+    width: 1000px;
+}
+    
 
 
 </style>
 <html lang="en-US">
 <!-- <body background="Images/mybackg.jpg"> -->
-<body>
-<!-- <h1 style="color:white;">"This is the future home of Scott Baker's personal website: coming summer 2018"</h1>
-<br>
-<img src="https://raw.githubusercontent.com/bakerscott/CU-APPM2720/master/m0/ScottBaker.jpg">
-<br><br> -->
- <!-- <a href="https://www.github.com/bakerscott">Visit my GitHub</a>
-<br><br>
-  <a href="mailto:scott.baker@colorado.edu">Contact me via email</a>
-<br><br>
- <a href="https://bakerscott.github.io/CU-Sabermetrics-Final">Sabermetrics Project</a>
-<br><br> -->
-<br>
-<br>
+    
+<head> 
+<script type="text/javascript">
+    function iframeloaded(){
+       var lastHeight = 0, curHeight = 0, $frame = $('iframe:eq(0)');
+       curHeight = $frame.contents().find('body').height();
+       if ( curHeight != lastHeight ) {
+           $frame.css('height', (lastHeight = curHeight) + 'px' );
+       }
+    }
+</script>
+
+
+    
+</head>
+<body>   
+<br><br><br><br><br><br>  
+<br><br><br><br><br><br>  
+<br><br><br><br><br><br>
+
+    
+
 <div class="content">
     <br>
-      <h1 class="cssTitle"> Scott Baker</h1>
-    <!-- <br>
-      <h1 style="color:white;">Personal Website</h1> -->
-    <br><br>
-      <h2 style="color:white;">Powered by GitHub Pages</h2>
-      <!-- <h3 style="color:white;font-size:20px;">Made by Scott Baker</h3> -->
-    <br><br>
+      <h1 class="cssTitle"> My Thesis: Machine Learning Techniques to Analyze Possession Efficiency from Basketball Tracking Data collected by ShotTracker System </h1>
+      
+    <p style = "color:white;">Scott Baker</p>
+    </div>
+
+<br><br>
+    
+    
+
+
+<iframe onload="iframeloaded()" src="updates.html"></iframe>
+
+    
+<br><br><br><br><br><br><br><br><br><br><br><br>      
+    </body>
+</html>  
+    
+    
+    
+    
+    
+    
